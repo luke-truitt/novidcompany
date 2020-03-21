@@ -7,7 +7,7 @@ import { Row, Col, Image } from "react-bootstrap";
 // Import individual thumbnails
 
 import luke from "./images/Truitt.jpg";
-import josh from "./images/Josh.jpg";
+import josh from "./images/Josh.png";
 
 // compose dictionary of headshots for people that have headshots
 const headshots = {

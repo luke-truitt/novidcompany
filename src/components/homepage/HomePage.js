@@ -60,7 +60,7 @@ class HomePage extends React.Component {
                 fluid
                 style={{ padding: 0 }}
                 className="main-graphic"
-                src={require("./images/novid_black_logo.svg")}
+                src={require("./images/novid_black_alt_logo.svg")}
               />
             </Col>
           </AnimationWrapper>
