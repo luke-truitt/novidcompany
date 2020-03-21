@@ -19,8 +19,8 @@ function Person(props) {
   console.log(headshots[props.img]);
 
   return (
-    <Col xs={12} sm={6} md={4} lg={3} style={{ padding: "1rem" }}>
-      <div className="person-image" onClick={() => window.location.href = 'mailto:' + props.img + '@novidcompany.com'}>
+    <Col xs={12} sm={6} md={4} lg={3} style={{ padding: "2rem" }}>
+      <div className="person-image" style={{width:"100%", alignContent:"center",justifyContent: "center"}}onClick={() => window.location.href = 'mailto:' + props.img + '@novidcompany.com'}>
         <img
           alt={props.img}
           src={headshots[props.img]}
@@ -31,10 +31,9 @@ function Person(props) {
             borderRadius: "100%"
           }}
         />
-        
       </div>
       <div>
-        <div style={{ paddingTop:"10px", width:"190px", fontSize: "1.5rem", textAlign:"center"}}>{props.name} </div>
+        <div style={{ paddingTop:"10px", width:"180px", fontSize: "1.5rem", textAlign:"center"}}>{props.name} </div>
       </div>
     </Col>
   );

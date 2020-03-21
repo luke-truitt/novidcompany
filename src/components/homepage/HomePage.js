@@ -122,20 +122,21 @@ class HomePage extends React.Component {
               </h3>
             </Row>
             <Row>
-              <Col
-                lg={6}
-                md={12}
+            <Col
+                md={6}
+                sm={12}
                 style={{
                   fontFamily: "Lora",
+                  display: "flex-inline",
                   justifyContent: "center",
                   alignItems: "center"
                 }}
               >
-                <br/> <br/> <br/>Josh and Luke finished Duke University after building and successfully launching <a href="https://www.wsj.com/articles/bored-teenagers-found-each-other-online-and-built-a-rocket-to-launch-into-space-11559143865">two rockets together</a> and have continued building unique solutions to problems ranging from gig economy insurance to data science consulting to systems integration platforms for the US Military.
+              Josh and Luke finished Duke University after building and successfully launching <a style={{display:"flex-inline"}}href="https://www.wsj.com/articles/bored-teenagers-found-each-other-online-and-built-a-rocket-to-launch-into-space-11559143865">two rockets together</a> and have continued building unique solutions to problems ranging from gig economy insurance to data science consulting to systems integration platforms for the US Military.
               </Col>
               <Col
-                lg={6}
-                md={12}
+                lg={3}
+                md={6}
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -147,7 +148,16 @@ class HomePage extends React.Component {
                   img="luke"
                   onClick="mailto:luke@novidcompany.com"
               />
-              <span style={{padding:"6vw"}}></span>
+              </Col>
+              <Col
+                lg={3}
+                md={6}
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+                >
               <Person
                   name="Josh Farahzad" 
                   img="josh"
