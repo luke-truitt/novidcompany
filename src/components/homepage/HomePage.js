@@ -95,7 +95,7 @@ class HomePage extends React.Component {
                   alignItems: "center"
                 }}
               >
-                WHAT WE DO
+                As the nation deals with a plethora of shortages due to the COVID-19 crisis, we are partnering with hotels to offer non-critical isolation rooms for COVID-19 patients to allow for hospital beds to be spared for those who need constant medical attention.
               </Col>
               <Col md={6} sm={12}>
               <Image
@@ -131,7 +131,7 @@ class HomePage extends React.Component {
                   alignItems: "center"
                 }}
               >
-                OUR TEAM
+                <br/> <br/> <br/>Josh and Luke finished Duke University after building and successfully launching <a href="https://www.wsj.com/articles/bored-teenagers-found-each-other-online-and-built-a-rocket-to-launch-into-space-11559143865">two rockets together</a> and have continued building unique solutions to problems ranging from gig economy insurance to data science consulting to systems integration platforms for the US Military.
               </Col>
               <Col
                 lg={6}
@@ -147,7 +147,7 @@ class HomePage extends React.Component {
                   img="luke"
                   onClick="mailto:luke@novidcompany.com"
               />
-              <span style={{padding:"10vw"}}></span>
+              <span style={{padding:"6vw"}}></span>
               <Person
                   name="Josh Farahzad" 
                   img="josh"
