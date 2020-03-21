@@ -1,0 +1,165 @@
+import React from "react";
+import {
+  Container,
+  Jumbotron,
+  Button,
+  Row,
+  Col,
+  Image,
+  Card,
+  Carousel
+} from "react-bootstrap";
+import { Link, Redirect } from "react-router-dom";
+import AnimationWrapper from "./AnimationWrapper.js";
+import Canvas from "../canvas/Canvas";
+import Animation from "../canvas/Animation";
+import Footer from "../tools/Footer";
+import Navigation from "../tools/Navigation";
+import ThemeCard from "./ThemeCard";
+import "./HomePage.scss";
+import Person from "./Person"; 
+
+class HomePage extends React.Component {
+  state = { redirect: false };
+
+
+  handleProjectsClick = () => {
+    this.setState({ redirect: true });
+  };
+
+  componentDidMount() {
+    this.setState({ redirect: false });
+  }
+
+  render() {
+    if (this.state.redirect) {
+      return <Redirect push to="/projects" />;
+    }
+
+    return (
+      <div>
+        {/**INTRODUCTION SECTION */}
+        <Container fluid style={{ padding: 0 }}>
+          <center>
+            <Navigation center={true} />
+          </center>
+
+          <AnimationWrapper>
+            <Col
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "100%",
+                height: "60vh"
+              }}
+            >
+              {/**Icon */}
+              {/* PUT THE ANIMATION REF(IN CONSTRUCTOR) HERE*/}
+              <Image
+                fluid
+                style={{ padding: 0 }}
+                className="main-graphic"
+                src={require("./images/novid_black_logo.svg")}
+              />
+            </Col>
+          </AnimationWrapper>
+        </Container>
+
+        {/**ABOUT SECTION */}
+        <Container
+          fluid
+          className="boxShadowed"
+          style={{ backgroundColor: "#e6e7e870", color: "#1e2c3a" }}
+        >
+          <Container>
+            <Row
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center"
+              }}
+            >
+              <h3 className="homepageTitle" style={{ marginBottom: "20px" }}>
+                Our Mission
+              </h3>
+            </Row>
+            <Row>
+              <Col
+                md={6}
+                sm={12}
+                style={{
+                  fontFamily: "Lora",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center"
+                }}
+              >
+                WHAT WE DO
+              </Col>
+              <Col md={6} sm={12}>
+              <Image
+                fluid
+                style={{ padding: 0 }}
+                className="hospital-graphic"
+                src={require("./images/hospital.jpg")}
+              />
+              </Col>
+            </Row>
+          </Container>
+        </Container>
+        <Container fluid className="boxShadowed">
+          <Container>
+            <Row
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center"
+              }}
+            >
+              <h3 className="homepageTitle" style={{ marginBottom: "20px" }}>
+                About Us
+              </h3>
+            </Row>
+            <Row>
+              <Col
+                lg={6}
+                md={12}
+                style={{
+                  fontFamily: "Lora",
+                  justifyContent: "center",
+                  alignItems: "center"
+                }}
+              >
+                OUR TEAM
+              </Col>
+              <Col
+                lg={6}
+                md={12}
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Person
+                  name="Luke Truitt" 
+                  img="luke"
+                  onClick="mailto:luke@novidcompany.com"
+              />
+              <span style={{padding:"10vw"}}></span>
+              <Person
+                  name="Josh Farahzad" 
+                  img="josh"
+              />
+              </Col>
+            </Row>
+          </Container>
+        </Container>
+        <Footer />
+      </div>
+    );
+  }
+}
+
+export default HomePage;
