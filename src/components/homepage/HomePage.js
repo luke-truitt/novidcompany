@@ -93,12 +93,19 @@ class HomePage extends React.Component {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  textAlign:"center"
+                  textAlign:"center",
                 }}
               >
                 As the nation deals with a plethora of shortages due to the COVID-19 crisis, The NoVid Company is partnering with hotels to offer non-critical isolation rooms for COVID-19 patients to allow for hospital beds to be spared for those who need constant medical attention.
               </Col>
-              <Col md={6} sm={12}>
+              <Col md={6} sm={12}
+              style={{
+                  fontFamily: "Lora",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  textAlign:"center",
+                }}>
               <Image
                 fluid
                 style={{ padding: 0 }}
