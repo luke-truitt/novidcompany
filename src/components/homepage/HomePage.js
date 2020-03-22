@@ -60,7 +60,7 @@ class HomePage extends React.Component {
                 fluid
                 style={{ padding: 0 }}
                 className="main-graphic"
-                src={require("./images/novid_black_alt_logo.svg")}
+                src={require("./images/novid_black_logo.svg")}
               />
             </Col>
           </AnimationWrapper>
@@ -92,10 +92,11 @@ class HomePage extends React.Component {
                   fontFamily: "Lora",
                   display: "flex",
                   justifyContent: "center",
-                  alignItems: "center"
+                  alignItems: "center",
+                  textAlign:"center"
                 }}
               >
-                As the nation deals with a plethora of shortages due to the COVID-19 crisis, we are partnering with hotels to offer non-critical isolation rooms for COVID-19 patients to allow for hospital beds to be spared for those who need constant medical attention.
+                As the nation deals with a plethora of shortages due to the COVID-19 crisis, The NoVid Company is partnering with hotels to offer non-critical isolation rooms for COVID-19 patients to allow for hospital beds to be spared for those who need constant medical attention.
               </Col>
               <Col md={6} sm={12}>
               <Image
@@ -129,7 +130,8 @@ class HomePage extends React.Component {
                   fontFamily: "Lora",
                   display: "flex-inline",
                   justifyContent: "center",
-                  alignItems: "center"
+                  alignItems: "center",
+                  textAlign:"center"
                 }}
               >
               Josh and Luke finished Duke University after building and successfully launching <a style={{display:"flex-inline"}}href="https://www.wsj.com/articles/bored-teenagers-found-each-other-online-and-built-a-rocket-to-launch-into-space-11559143865">two rockets together</a> and have continued building unique solutions to problems ranging from gig economy insurance to data science consulting to systems integration platforms for the US Military.
