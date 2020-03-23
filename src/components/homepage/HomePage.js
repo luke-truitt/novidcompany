@@ -141,7 +141,7 @@ class HomePage extends React.Component {
                   textAlign:"center"
                 }}
               >
-              Josh and Luke finished Duke University after building and successfully launching <a style={{display:"flex-inline"}}href="https://www.wsj.com/articles/bored-teenagers-found-each-other-online-and-built-a-rocket-to-launch-into-space-11559143865">two rockets together</a> and have continued building unique solutions to problems ranging from gig economy insurance to data science consulting to systems integration platforms for the US Military.
+              Josh and Luke finished Duke University after building and successfully launching <a style={{display:"flex-inline"}}href="https://www.wsj.com/articles/bored-teenagers-found-each-other-online-and-built-a-rocket-to-launch-into-space-11559143865">two rockets together</a> and have continued building unique solutions to problems ranging from a gig economy marketplace and a <a href="http://missiontoothbrush.org/">public health nonprofit</a> to a <a href="https://amlgroup.us">Data Science Research and Consulting group</a> and a <a href="https://spearautomation.com">systems integration platforms for the US Military</a>.
               </Col>
               <Col
                 lg={3}

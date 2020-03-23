@@ -1,6 +1,6 @@
 import React from "react";
 import * as VANTA from "vanta";
-import DOTS from "vanta/dist/vanta.dots.min";
+import DOTS from "vanta/dist/vanta.globe.min";
 import * as THREE from "three";
 //mport BIRDS from 'vanta/dist/vanta.birds.min'
 
